@@ -19,16 +19,34 @@
 		<id>nexus</id>
 		<name>Ashok IT Snapshots Nexus Repo</name>
 		<url>http://13.233.225.210:8081/repository/harishit-snapshot/</url>
-	</snapshotRepository>	
+	</snapshotRepository>
+
+<repositories>
+			<repository>
+				<id>nexus</id>
+				<url>http://13.233.225.210:8081/repository/harishit-remote/</url>
+			</repository>
+		</repositories>
+		
+<dependency>
+  <groupId>in.harishit</groupId>
+  <artifactId>pwd-utils</artifactId>
+  <version>1.0</version>
+</dependency>
+	
 </distributionManagement>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
  
 </project>
+
+
+
+
